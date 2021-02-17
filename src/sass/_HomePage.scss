@@ -1,0 +1,35 @@
+.home-page__wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: $color-white;
+}
+
+.home-page__content {
+  width: 100vw;
+  height: 80%;
+  background-color: $color-pink;
+
+  animation-name: moveUpBackground;
+  @include heading-animation-base;
+}
+
+.monstera-icon--1{
+  width: 18rem;
+  position: absolute;
+  top: 11%;
+  right: 5%;
+
+  animation-name: showUp;
+  @include heading-animation-base;
+}
+
+.monstera-icon--2{
+  width: 18rem;
+  position: absolute;
+  bottom: 3%;
+  left: 5%;
+
+  animation-name: showUp;
+  @include heading-animation-base;
+}

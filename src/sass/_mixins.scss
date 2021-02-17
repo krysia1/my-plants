@@ -1,0 +1,14 @@
+@mixin heading-base {
+  backface-visibility: hidden;
+  color: $color-grey-text;
+  display: block;
+  line-height: 1.4;
+
+  animation-name: moveUpHeading;
+  @include heading-animation-base;
+}
+
+@mixin heading-animation-base {
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}

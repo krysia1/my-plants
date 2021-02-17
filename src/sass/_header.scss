@@ -1,0 +1,32 @@
+.header {
+  width: 100vw;
+  height: 20%;
+  position: relative;
+
+  animation-name: moveUpHeader;
+  @include heading-animation-base;
+
+  &__text-box {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+
+.heading{
+  &--main {
+    font-family: $font-special;
+    font-size: 6.4rem;
+    @include heading-base;
+  }
+
+  &--sub {
+    font-family: $font-default;
+    font-size: 1.6rem;
+    font-weight: 400;
+    @include heading-base;
+  }
+}
